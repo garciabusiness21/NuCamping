@@ -215,7 +215,7 @@
                             </button>
                         </div>
             </div>
-
+        </div>
 
 
             <div class="row row-content align-items-center">
@@ -226,8 +226,8 @@
                     <div class="media">
                         <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail thumbnail"/>
                         <div class="media-body align-self-center">
-                        <h3>Our Campsites</h3>
-                        <p class='d-none d-sm-block'>Explore our growing database of curated campsites and leave your own reviews!</p>
+                            <h3>Our Campsites</h3>
+                            <p class='d-none d-sm-block'>Explore our growing database of curated campsites and leave your own reviews!</p>
                         </div>
                     </div>
 
@@ -264,7 +264,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </div>
 
     <footer class="site-footer">
@@ -300,22 +299,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!--jQuerry script for the carousel Button-->
-    <script>
-        $(function(){
-            $(".carousel").carousel({ interval: 2000 });
-            $("#carouselButton").click(function(){
-                if ($("#carouselButton").children("i").hasClass("fa-pause")){
-                    $(".carousel").carousel("pause");
-                    $("#carouselButton").children("i").removeClass("fa-pause");
-                    $("#carouselButton").children("i").addClass("fa-play");
-                } else {
-                    $(".carousel").carousel("cycle");
-                    $("#carouselButton").children("i").removeClass("fa-play");
-                    $("#carouselButton").children("i").addClass("fa-pause");
-                }
-            });
-        });
-    </script>
+    <script src="js/scripts.js"></script>
 
 </body>
 
